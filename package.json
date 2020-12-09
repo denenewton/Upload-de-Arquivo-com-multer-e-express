@@ -1,0 +1,22 @@
+{
+  "name": "uploads",
+  "version": "1.0.0",
+  "description": "upload de arquivos",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "author": "Daniel dos Santos araujo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "sequelize-cli": "^6.2.0"
+  }
+}
