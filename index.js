@@ -1,7 +1,8 @@
 require('dotenv').config()
+require('./src/database/database')
 const express = require('express');
-const app = express();
 const routeUploads = require('./src/routes/routeUploads')
+const app = express();
 
 app.set('view engine', 'ejs')
 
