@@ -8,6 +8,9 @@ module.exports = {
         if (file.mimetype !== 'image/png' && file.mimetype !== 'image/jpeg') {
             return cb(new multer.MulterError('Arquivo precisa ser PNG ou JPG.'));
         }
+        if(file == undefined){
+            return cb(new multer.MulterError('Você esqueceu de selecionar o arquivo.'));
+        }
 
         return cb(null, true);
     },
